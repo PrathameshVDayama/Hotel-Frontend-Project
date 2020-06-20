@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <link rel = "stylesheet" href = "F:\Web Development\Hotel-Frontend-Project\styles\style.css">
+        <script src = "F:\Web Development\Hotel-Frontend-Project\JavaScript\script.js"></script>
+        <title>Edit Menu Item</title>
+    </head>
+    <body>
+       
+        <div class = "topnav">
+            <div class = "home">truYum</div>
+            <img src = "F:\Web Development\Hotel-Frontend-Project\images\truyum-logo-light.png">
+            <a href = "menu-item-list-admin.html">Menu</a>
+        </div>
+
+        <h3>Edit Menu Item</h3>
+        <div class = "body-content-colour">
+            <form action = "edit-menu-item-status.html" name = "editMenuItem" onsubmit = "return validateForm()" method="POST">
+                <br>
+                <div class = "form-field-spacing">
+                    <label for = "name1">Name</label>
+                    <input type = "text" class = "text-box text-box-title" name = "title" id = "name1">
+                </div>
+                
+                <div class = "form-field-spacing">
+                        <label for = "price">Price(Rs.)</label>
+                        <input type = "text" class = "text-box" name = "price" id = "price">
+                </div>
+
+                <div class = "form-field-spacing">
+                        <label for = "inStock">Active</label>
+                        <input  class = "radio" type = "radio" name = "inStock" value = "yes">Yes
+                        <input  class = "radio" type = "radio" name = "inStock" value = "no">No
+                </div>
+
+                <div class = "form-field-spacing">
+                        <label for = "dateOfLaunch">Date of Lunch</label>
+                        <input type = "text" class = "text-box" name = "dateOfLaunch">
+                </div>
+
+                <div class = "form-field-spacing">
+                        <label for = "category">Category</label>
+                        <select name = "category" class = "dropdown">
+                            <option value = "0">Main Course</option>
+                            <option value = "starter">Starter</option>
+                            <option value = "mainCourse">Main Course</option>
+                            <option value = "dessert">Dessert</option>
+                            <option value = "drinks">Drinks</option>
+                        </select>                
+                </div>
+
+                <div class = "form-field-spacing">
+                        <label for = "freeDelivery">Free Delivery</label>
+                        <input type = "checkbox" name = "freeDelivery">
+                </div>
+
+                <div class = "form-field-spacing">
+                        <input type = "submit" class = "button success-button" value = "Save">
+                </div>
+            </form>
+        </div>
+
+        <div class = "footer">
+                <h3>Copyright @ 2019</h3>
+        </div>
+   
+    </body>
+   
+</html>
